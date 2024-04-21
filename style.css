@@ -1,29 +1,31 @@
 :root {
-  --background-color: #ffffff;
-  --border-color: #000000;
-  --text-color: #8e1414;
-  --text-shadow: 0px 4px 4px #00000040;
-  --text-family: "Inter-Regular", Helvetica;
-  --text-weight: 400;
-  --text-size-large: 36px;
-  --text-size-medium: 24px;
-  --text-size-small: 24px;
-  --rectangle-height: 40px;
-  --rectangle-width: 252px;
-  --rectangle-top: 424px;
-  --rectangle-left: 220px;
-  --rectangle-background: #d9d9d9;
-  --rectangle-border: 3px solid #000000;
-  --overlap-group-width: 559px;
-  --overlap-group-height: 734px;
-  --overlap-group-left: -42px;
-  --ellipse-width: 144px;
-  --ellipse-height: 143px;
-  --ellipse-top: 51px;
-  --ellipse-left: 457px;
+  /* Define the default color and size variables for the design system */
+  --background-color: #ffffff; /* White background color */
+  --border-color: #000000; /* Black border color */
+  --text-color: #8e1414; /* Dark red text color */
+  --text-shadow: 0px 4px 4px #00000040; /* Text shadow for a subtle 3D effect */
+  --text-family: "Inter-Regular", Helvetica; /* Default font family */
+  --text-weight: 400; /* Default font weight */
+  --text-size-large: 36px; /* Large text size */
+  --text-size-medium: 24px; /* Medium text size */
+  --text-size-small: 24px; /* Small text size */
+  --rectangle-height: 40px; /* Height of rectangle elements */
+  --rectangle-width: 252px; /* Width of rectangle elements */
+  --rectangle-top: 424px; /* Vertical position of rectangle elements */
+  --rectangle-left: 220px; /* Horizontal position of rectangle elements */
+  --rectangle-background: #d9d9d9; /* Background color of rectangle elements */
+  --rectangle-border: 3px solid #000000; /* Border of rectangle elements */
+  --overlap-group-width: 559px; /* Width of the overlap group container */
+  --overlap-group-height: 734px; /* Height of the overlap group container */
+  --overlap-group-left: -42px; /* Horizontal position of the overlap group container */
+  --ellipse-width: 144px; /* Width of the ellipse element */
+  --ellipse-height: 143px; /* Height of the ellipse element */
+  --ellipse-top: 51px; /* Vertical position of the ellipse element */
+  --ellipse-left: 457px; /* Horizontal position of the ellipse element */
 }
 
 .android-large {
+  /* Define the layout and positioning of the Android large screen components */
   --rectangle-top-2: 494px;
   --rectangle-top-3: 349px;
   --text-top-1: 21px;
@@ -38,34 +40,4 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  position: relative;
-}
-
-.android-large .overlap-group-wrapper {
-  background-color: var(--background-color);
-  overflow: hidden;
-  width: var(--overlap-group-width);
-  height: var(--overlap-group-height);
-  position: relative;
-  left: var(--overlap-group-left);
-}
-
-.android-large .overlap-group(
-  width: calc(var(--overlap-group-width) + var(--overlap-group-left));
-  height: var(--overlap-group-height);
-}
-
-.android-large .lcci-background(
-  width: var(--overlap-group-width);
-  height: var(--overlap-group-height);
-  top: 0;
-  left: var(--overlap-group-left);
-  mix-blend-mode: darken;
-  object-fit: cover;
-  position: absolute;
-}
-
-.android-large .ellipse(
-  width: var(--ellipse-width);
-  height: var(--ellipse-height);
-  top: var(--ellipse-top);
+  position
